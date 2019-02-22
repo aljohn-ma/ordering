@@ -13,7 +13,7 @@
 <body class="hold-transition skin-blue sidebar-mini">
   
   <app-root></app-root>
-  
+  <!-- {{ App::VERSION() }} -->
   
   <script type="text/javascript" src="{{ asset('app/scripts.js') }}"></script>
   <script type="text/javascript" src="{{ asset('app/polyfills.js') }}"></script>
