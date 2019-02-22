@@ -681,7 +681,6 @@ var MainComponent = /** @class */ (function () {
                     case 0: return [4 /*yield*/, this.getItems()];
                     case 1:
                         _a.sent();
-                        this.is_loading = false;
                         return [2 /*return*/];
                 }
             });
@@ -691,6 +690,7 @@ var MainComponent = /** @class */ (function () {
         var _this = this;
         this.http.get_list(Object(src_app_constants_urls__WEBPACK_IMPORTED_MODULE_2__["GET_ITEMS"])()).subscribe(function (res) {
             _this.items = res;
+            _this.is_loading = false;
         });
     };
     MainComponent.prototype.getBg = function (idx) {
